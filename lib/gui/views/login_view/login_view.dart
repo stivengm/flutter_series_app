@@ -50,7 +50,9 @@ class _LoginViewState extends State<LoginView> {
       children: [
         SizedBox(
           width: media.width * .4,
-          child: PrimaryButton(text: 'Sign up', color: AppStyle.darkBackground, onPressed: () { }),
+          child: PrimaryButton(text: 'Sign up', color: AppStyle.darkBackground, onPressed: () {
+            Navigator.pushNamed(context, 'home');
+          }),
         ),
         const SizedBox(height: 15.0),
         SizedBox(
