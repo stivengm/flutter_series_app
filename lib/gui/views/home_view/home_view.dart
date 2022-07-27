@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_series_app/gui/app_style.dart';
 
 
 class HomeView extends StatelessWidget {
@@ -7,7 +8,13 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: AppStyle.darkBackground,
+      appBar: AppBar(
+        elevation: 0,
+        title: Text("Inicio", style: Theme.of(context).textTheme.headline5!.copyWith(color: AppStyle.whiteColor),),
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+      ),
       body: _body(),
     );
   }
