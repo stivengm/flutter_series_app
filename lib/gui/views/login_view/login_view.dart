@@ -50,14 +50,14 @@ class _LoginViewState extends State<LoginView> {
       children: [
         SizedBox(
           width: media.width * .4,
-          child: PrimaryButton(text: 'Sign up', color: AppStyle.darkBackground, onPressed: () {
+          child: PrimaryButton(text: 'Iniciar sesión', color: AppStyle.darkBackground, onPressed: () {
             Navigator.pushNamed(context, 'home');
           }),
         ),
         const SizedBox(height: 15.0),
         SizedBox(
           width: media.width * .4,
-          child: SecundaryButton(text: 'Sign up', onPressed: () { }),
+          child: SecundaryButton(text: 'Regístrate', onPressed: () { }),
         ),
         const SizedBox(height: 30.0),
         const Text("¿Olvidó su contraseña?", style: TextStyle( color: AppStyle.whiteColor, decoration: TextDecoration.underline )),

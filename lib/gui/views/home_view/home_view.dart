@@ -11,7 +11,7 @@ class HomeView extends StatelessWidget {
       backgroundColor: AppStyle.darkBackground,
       appBar: AppBar(
         elevation: 0,
-        title: Text("Inicio", style: Theme.of(context).textTheme.headline5!.copyWith(color: AppStyle.whiteColor),),
+        title: Text("Inicio", style: Theme.of(context).textTheme.headline6!.copyWith(color: AppStyle.whiteColor),),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         actions: [
