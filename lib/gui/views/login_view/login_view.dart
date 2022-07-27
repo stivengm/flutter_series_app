@@ -35,7 +35,7 @@ class _LoginViewState extends State<LoginView> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const Text("¡Bienvenido!"),
+            Text("¡Bienvenido!", style: Theme.of(context).textTheme.headline5!.copyWith(color: AppStyle.whiteColor,)),
             _sectionsButtons(),
             const SizedBox()
           ],
