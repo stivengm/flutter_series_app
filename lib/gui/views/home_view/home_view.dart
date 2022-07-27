@@ -14,6 +14,14 @@ class HomeView extends StatelessWidget {
         title: Text("Inicio", style: Theme.of(context).textTheme.headline5!.copyWith(color: AppStyle.whiteColor),),
         centerTitle: true,
         backgroundColor: Colors.transparent,
+        actions: [
+          IconButton(
+            icon: const Icon(
+              Icons.settings
+            ),
+            onPressed: () => Navigator.pushNamed(context, 'settings'),
+          ),
+        ],
       ),
       body: _body(),
     );
