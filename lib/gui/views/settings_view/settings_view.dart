@@ -9,7 +9,7 @@ class SettingsView extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppStyle.darkBackground,
       appBar: AppBar(
-        title: Text("Configuración", style: Theme.of(context).textTheme.headline6!.copyWith(color: AppStyle.whiteColor),),
+        title: Text("Configuración", style: Theme.of(context).textTheme.headline6!.copyWith(color: AppStyle.whiteColor, fontWeight: FontWeight.w300),),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
