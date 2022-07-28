@@ -8,7 +8,7 @@ class HomeState {
   HomeState({
     this.loading = false,
     this.currentIndex = 0,
-    this.nameScreen = 'Home',
+    this.nameScreen = 'Inicio',
   });
 
   HomeState copyWith({
