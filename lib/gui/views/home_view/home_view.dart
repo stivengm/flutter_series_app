@@ -32,9 +32,7 @@ class _HomeViewState extends State<HomeView> {
             actions: [
               IconButton(
                 icon: const Icon(Icons.settings),
-                onPressed: () =>
-                    Navigator.pushReplacementNamed(context, 'login'),
-                // onPressed: () => Navigator.pushNamed(context, 'settings'),
+                onPressed: () => Navigator.pushNamed(context, 'settings'),
               ),
             ],
           ),
@@ -87,7 +85,6 @@ class _HomeViewState extends State<HomeView> {
   getNameScreen(i) {
     final homeBloc = BlocProvider.of<HomeBloc>(context);
     String nameScreen = "";
-    print(i);
     switch (i) {
       case 0:
         nameScreen = 'Inicio';
@@ -103,7 +100,6 @@ class _HomeViewState extends State<HomeView> {
         break;
       default:
     }
-    print(nameScreen);
     pagecontroller.animateToPage(i,
         duration: const Duration(milliseconds: 250), curve: Curves.easeOut);
     homeBloc.add(ChangeCurrentIndex(currentIndex: i, nameScreen: nameScreen));
