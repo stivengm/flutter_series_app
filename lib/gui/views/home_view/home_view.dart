@@ -19,7 +19,8 @@ class HomeView extends StatelessWidget {
             icon: const Icon(
               Icons.settings
             ),
-            onPressed: () => Navigator.pushNamed(context, 'settings'),
+            onPressed: () => Navigator.pushReplacementNamed(context, 'login'),
+            // onPressed: () => Navigator.pushNamed(context, 'settings'),
           ),
         ],
       ),
